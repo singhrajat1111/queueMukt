@@ -50,7 +50,7 @@ QueueMukt/
 
 ⚙️ Installation & Setup
 1. Clone the repository
-git clone https://github.com/your-username/QueueMukt.git
+git clone https://https://github.com/singhrajat1111/queueMukt
 cd QueueMukt
 
 2. Install dependencies
