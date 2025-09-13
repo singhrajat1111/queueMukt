@@ -29,7 +29,7 @@ function Landing() {
         <form className="space-y-4" onSubmit={handleSubmit}>
           {isSignup && (
             <input
-              type="text"
+              type="text" required
               placeholder="Full Name"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
@@ -38,7 +38,7 @@ function Landing() {
           )}
 
           <input
-            type="email"
+            type="email" required
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -46,7 +46,7 @@ function Landing() {
           />
 
           <input
-            type="password"
+            type="password" required
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -54,10 +54,12 @@ function Landing() {
           />
 
           <select
-            value={role}
+            value={role} required
             onChange={(e) => setRole(e.target.value)}
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
+            <option value="">Select Role</option>
+            <option value="admin">Admin</option>
             <option value="patient">Patient</option>
             <option value="doctor">Doctor</option>
           </select>

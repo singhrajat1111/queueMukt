@@ -11,7 +11,7 @@ function App() {
       <div className="min-h-screen bg-blue-50">
         {/* Navbar */}
         <nav className="bg-blue-900 text-white px-6 py-4 flex justify-between items-center shadow-md">
-          <h1 className="text-xl font-bold">QueueMukt</h1>
+          <Link to="/" className="text-2xl font-bold">QueueMukt</Link>
           <div className="space-x-4">
             <NavLink to="/" className={({isActive}) => isActive? "bg-cyan-500 rounded-2xl px-2 font-semibold": "hover:underline"}>Home</NavLink>
             <NavLink to="/patient" className={({isActive}) => isActive? "bg-cyan-500 rounded-2xl px-2 font-semibold": "hover:underline"}>Patient</NavLink>
