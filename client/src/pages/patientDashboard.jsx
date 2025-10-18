@@ -16,8 +16,8 @@ const PatientDashboard = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const doctors = [
-    { id: 1, name: "Dr. Johny Sins", specialty: "Cardiology", experience: "10 years" },
-    { id: 2, name: "Dr. Lana Rhodes", specialty: "Orthopedics", experience: "5 years" },
+    { id: 1, name: "Dr. Rajat Singh", specialty: "Cardiology", experience: "10 years" },
+    { id: 2, name: "Dr. Adnan Ali", specialty: "Orthopedics", experience: "5 years" },
   ];
 
   const handleLoginAsPatient = () => setIsLoggedIn(true);
